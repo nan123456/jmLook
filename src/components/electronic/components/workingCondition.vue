@@ -80,4 +80,7 @@ export default {
 </script>
 
 <style lang="">
+  body{
+    font-size:32px
+  }
 </style>

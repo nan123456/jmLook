@@ -34,26 +34,19 @@ export default {
           field: "Serial"
         },
         {
-          label: "任务名称",
+          label: "部件名称",
           field: "name"
         },
         {
-          label: "执行班组",
+          label: "工位",
           field: "Group"
         },
         {
-          label: "班组长姓名",
-          field: "bzzname"
+          label: "排产时间",
+          field: "time"
         },
         {
-          label: "计划完成时间",
-          field: "time",
-          type:"date",
-          dateInputFormat: 'YYYY-MM-DD',
-          dateOutputFormat: 'YYYY-M-Do',
-        },
-        {
-          label: "是否完成",
+          label: "交付时间",
           field: "finished",
         },
         {
@@ -85,5 +78,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+  body {
+    font-size:32px
+  }
 </style>

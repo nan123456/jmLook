@@ -38,15 +38,8 @@ export default {
           field: "name"
         },
         {
-          label: "班组编号",
-          field: "Serial"
-        },
-        {
-          label: "计划返工时间",
+          label: "异常时间",
           field: "time",
-          type:"date",
-          dateInputFormat: 'YYYY-MM-DD',
-          dateOutputFormat: 'YYYY-M-Do'
         },
         {
           label: "备注",
@@ -75,5 +68,8 @@ export default {
 };
 </script>
 
-<style lang="">
+<style>
+  body{
+    font-size:32px
+  }
 </style>
