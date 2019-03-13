@@ -72,4 +72,8 @@ export default {
   body{
     font-size:32px
   }
+  table.vgt-table{
+    font-size: 38px;
+    color: #606266;
+  }
 </style>

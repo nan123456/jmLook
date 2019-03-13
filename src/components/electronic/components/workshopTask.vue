@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2 class="header" style="text-align: center;">
+		<h2 class="header">
 			车间任务
 		</h2>
 	  <div>
@@ -81,5 +81,11 @@ export default {
 <style scope>
   body {
     font-size:32px
+  }
+
+  
+  table.vgt-table{
+    font-size: 38px;
+    color: #606266;
   }
 </style>
