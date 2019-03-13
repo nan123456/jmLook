@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
   body {
     font-size:32px
   }

@@ -19,6 +19,7 @@ import abnormal from '@/components/electronic/components/abnormal';
 import workshopTask from '@/components/electronic/components/workshopTask';
 export default {
   name: 'electronic',
+  inject:['reload'],
   components: {
     abnormal,
     // workingCondition,
@@ -32,6 +33,17 @@ export default {
 	      }
       }
   	}
+  },
+
+  created: function () {
+          setInterval(this.timer, 30000)
+      },
+  methods: {
+    timer: function () {
+      
+      this.reload()
+      console.log("nanan")
+      }
   }
 }
 </script>
