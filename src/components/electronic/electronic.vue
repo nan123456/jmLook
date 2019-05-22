@@ -42,7 +42,6 @@ export default {
     timer: function () {
       
       this.reload()
-      console.log("nanan")
       }
   }
 }

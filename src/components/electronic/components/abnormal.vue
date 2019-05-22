@@ -68,12 +68,12 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
   body{
-    font-size:32px
+    font-size:32px !important;
   }
   table.vgt-table{
-    font-size: 38px;
-    color: #606266;
+    font-size: 38px !important;
+    color: #606266 !important;
   }
 </style>
