@@ -38,17 +38,13 @@ export default {
           field: "name"
         },
         {
-          label: "工位",
-          field: "Group"
-        },
-        {
-          label: "排产时间",
+          label: "就工时间",
           field: "time"
         },
-        {
-          label: "交付时间",
-          field: "finished",
-        },
+        // {
+        //   label: "交付时间",
+        //   field: "finished",
+        // },
         {
           label: "备注",
           field: "Remarks"
@@ -90,12 +86,11 @@ export default {
         axios.post(`${this.baseURL}/electronic/WorkshopTask.php`,fd).then(this.getDataInfoSucc)
    },
   	 getDataInfoSucc(res){
-    	res=res.data
-//  	console.log(res)
-    	if(res[res.length-1].success){
-				res.pop()
-        this.rows = res;
-      }
+    	let success = res.data.pop()
+      res = res.data
+      if(success){
+        this.rows = res
+      } 
 //  	console.log(res)
     }
   }
