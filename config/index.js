@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
     proxyTable: {
       '/api':{
         target:'http://jsonplaceholder.typicode.com',
@@ -19,14 +19,14 @@ module.exports = {
         }
     },
     '/jmmes':{
-      target: 'http://localhost:8081',
+      target: 'http://localhost:80',
       changeOrigin:true,
       pathRewrite: {
         '^/jmmes':'/jmphp/src'
       }
     },
     '/jmmesphp': {
-      target: 'http://192.168.43.211:8081',
+      target: 'http://192.168.43.211:80',
       changeOrigin: true,
       pathRewrite: {
         '^/jmmesphp':'/jm'
@@ -65,7 +65,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
