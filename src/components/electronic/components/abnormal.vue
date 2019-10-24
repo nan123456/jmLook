@@ -76,4 +76,7 @@ export default {
     font-size: 38px !important;
     color: #606266 !important;
   }
+  .vgt-left-align{
+    text-align: center !important;
+  }
 </style>

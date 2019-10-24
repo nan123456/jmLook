@@ -30,7 +30,7 @@ export default {
     return {
       columns: [
         {
-          label: "车间编号",
+          label: "工序编号",
           field: "Serial"
         },
         {
@@ -106,5 +106,8 @@ export default {
   table.vgt-table{
     font-size: 38px !important;
     color: #606266 !important;
+  }
+  .vgt-left-align{
+    text-align: center !important;
   }
 </style>

@@ -83,4 +83,7 @@ export default {
   body{
     font-size:32px
   }
+  .vgt-left-align{
+    text-align: center !important;
+  }
 </style>
