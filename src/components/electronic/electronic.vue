@@ -34,14 +34,18 @@ export default {
       }
   	}
   },
-
+//http://localhost:8081/#/?workshop=K
   created: function () {
-          setInterval(this.timer, 30000)
+          this.yanshi()
       },
   methods: {
+    yanshi:function(){
+      setTimeout(this.timer, 30000)
+      // setInterval(this.timer, 5000)
+    },
     timer: function () {
-      
-      this.reload()
+      // clearInterval();
+      this.reload();
       }
   }
 }
